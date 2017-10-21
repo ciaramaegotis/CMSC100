@@ -46,6 +46,27 @@ li a:hover:not(.active) {
     font-size: 1.0em;
 }
 
+#iconShortcutSalmon {
+	padding: 0px;
+    color: #FA8072;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 1.0em;
+}
+
+#iconShortcutBrown {
+	padding: 0px;
+    color: #CD853F;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 1.0em;
+}
+
+#iconShortcutSkyblue {
+	padding: 0px;
+    color: #7b68ee;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 1.0em;
+}
+
 #fontOfficial {
 	float: left;
 	padding-top: 10px;
@@ -120,7 +141,7 @@ body{
 
 #shortcuts {
 	width: 25%;
-	height: 700px;
+	height: 900px;
 	float: left;
 }
 
@@ -134,7 +155,7 @@ body{
 
 #postSection {
 	width: 50%;
-	height: 150px;
+	height: 200px;
 	float: left;
 	background-color: white;
 	border-radius: 5px;
@@ -170,6 +191,62 @@ body{
 #liShortcut a:hover:not(.active) {
     background-color: #f7f7f7;
 }
+
+#divider {
+	width: 100%;
+	float: left;
+	padding-left: 50px;
+	font-family: "Lucida Grande";
+	color: #696969;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+textarea {
+	width: 97%;
+	height: 70px;
+	border-radius: 5px;
+	font-family: "Lucida Grande";
+	font-size: 1.0em;
+	text-align: left;
+	padding-left: 10px;
+	padding-top: 10px;
+	resize: none;
+}
+
+#ulNavigationPost {
+	list-style-type: none;
+	margin: 0;
+    padding: 0;
+}
+
+#liNavigationPost {
+	font-family: "Lucida Grande";
+}
+
+#aNavigationPost {
+	height: 10px;
+	width: 100px;
+	float: left;
+	padding-bottom: 10px;
+	/*display: block;*/
+    color: black;
+    text-align: justify;
+    /*padding: 4px 80px;*/
+    text-decoration: none;
+    color: #3b5998;
+}
+
+#liNavigationPost a:hover:not(.active) {
+    background-color: #c5c5c5;
+    border-radius: 2px;
+}
+
+#iconsNagivationPost {
+	color: black;
+	padding-right: 5px;
+}
+
 </style>
 <title>
 	FACEBUKING
@@ -218,7 +295,81 @@ body{
 		 </li>
 
 	</ul>
-	Shortcuts
+	<div id = "divider">
+		Shortcuts
+	</div>
+	<!-- start -->
+	<ul id = "shortcutStyle">
+		<li id = "liShortcut"> 
+			<a href="#CMSC100">
+				<i id = "iconShortcut" class="fa fa-group"></i>
+		 		CMSC 100 EF 
+		 	</a>
+		 </li>
+		<li id = "liShortcut">
+			<a href="#FLOURISHANDBLOTTS">
+				<i id = "iconShortcut" class="fa fa-group"></i>
+		 		Flourish & Blotts 
+		 	</a>
+		 </li>
+		<li id = "liShortcut">
+			<a href="#POSC1U">
+				<i id = "iconShortcut" class="fa fa-group"></i>
+		 		POSC 1 - U (OFFICIA... 
+		 	</a>
+		 </li>
+		 <li id = "liShortcut">
+			<a href="#happydogs">
+				<i id = "iconShortcutBrown" class="fa fa-paw"></i>
+		 		Happy Dogs 
+		 	</a>
+		 </li>
+		 <li id = "liShortcut">
+			<a href="#chillabotnights">
+				<i id = "iconShortcutSalmon" class="fa fa-calendar"></i>
+		 		Chillabot Nights
+		 	</a>
+		 </li>
+	</ul>
+	<!-- end -->
+	<div id = "divider">
+		Explore
+	</div>
+	<ul id = "shortcutStyle">
+		<li id = "liShortcut"> 
+			<a href="#CMSC100">
+				<i id = "iconShortcut" class="fa fa-group"></i>
+		 		Groups
+		 	</a>
+		 </li>
+		<li id = "liShortcut">
+			<a href="#FLOURISHANDBLOTTS">
+				<i id = "iconShortcutBrown" class="fa fa-flag"></i>
+		 		Pages
+		 	</a>
+		 </li>
+		<li id = "liShortcut">
+			<a href="#POSC1U">
+				<i id = "iconShortcutSalmon" class="fa fa-calendar"></i>
+		 		Events
+		 	</a>
+		 </li>
+		 <li id = "liShortcut">
+			<a href="#happydogs">
+				<i id = "iconShortcutSalmon" class="fa fa-bookmark"></i>
+		 		Saved 
+		 	</a>
+		 </li>
+		 <li id = "liShortcut">
+			<a href="#chillabotnights">
+				<i id = "iconShortcutSkyblue" class="fa fa-drivers-license"></i>
+		 		Friends List
+		 	</a>
+		 </li>
+	</ul>
+	<div id = "divider">
+		Create
+	</div>
 </aside>
 <aside id = "ads">
 	<div style="padding-bottom: 10px">
@@ -230,31 +381,42 @@ body{
 		Friend Requests
 	</div>
 </aside>
-	<div style="padding-bottom: 170px">
-	<section id = "postSection">
-		postSection postSection postSection
-	</section>
+<div>
+	<div style="padding-bottom: 220px">
+		<section id = "postSection">
+		<ul id = "ulNavigationPost">
+			<li class = "active" id = "liNavigationPost"><a href = "#post" id = "aNavigationPost"> <i id = "iconsNagivationPost" class = "fa fa-pencil-square"></i>Make Post </a></li>
+			<li id = "liNavigationPost"><a href = "#photovideoalbum" id = "aNavigationPost"> <i id = "iconsNagivationPost" class = "fa fa-file-image-o"></i>Photo/Video</a></li>
+			<li id = "liNavigationPost"><a href = "#live" id = "aNavigationPost"><i id = "iconsNagivationPost" class = "fa fa-camera"></i> Live Video </a></li>
+		</ul>
+			<textarea>What's on your mind?</textarea>
+		<ul id = "ulNavigationPost">
+			<li id = "liNavigationPost"><a href = "#photovideoalbum" id = "aNavigationPost"> <i id = "iconsNagivationPost" class = "fa fa-file-image-o"></i>Photo/Video</a></li>
+			<li id = "liNavigationPost"><a href = "#live" id = "aNavigationPost"><i id = "iconsNagivationPost" class = "fa fa-smile-o"></i> Live Video </a></li>
+		</ul>
+		</section>
+		</div>
+		<div style="padding-bottom: 220px">
+		<section id = "postSection">
+			whhhhhhhhaaaaaaaaaaaaaaaaaaaaaaaaat
+		</section>
+		</div>
+		<div style="padding-bottom: 220px">
+		<section id = "postSection">
+			aint no crying in the club
+		</section>
+		</div>
+		<div style="padding-bottom: 220px">
+		<section id = "postSection">
+			who got the power?
+		</section>
+		</div>
+		<div style="padding-bottom: 220px">
+		<section id = "postSection">
+			who got the power?
+		</section>
 	</div>
-	<div style="padding-bottom: 170px">
-	<section id = "postSection">
-		whhhhhhhhaaaaaaaaaaaaaaaaaaaaaaaaat
-	</section>
-	</div>
-	<div style="padding-bottom: 170px">
-	<section id = "postSection">
-		aint no crying in the club
-	</section>
-	</div>
-	<div style="padding-bottom: 170px">
-	<section id = "postSection">
-		who got the power?
-	</section>
-	</div>
-	<div style="padding-bottom: 170px">
-	<section id = "postSection">
-		who got the power?
-	</section>
-	</div>
+</div>
 <footer id = "copyrights">
 	© COPYRIGHTS
 </footer>
