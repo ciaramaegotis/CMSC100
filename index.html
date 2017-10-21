@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+#ulMain {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3b5998;
+}
+
+#liMain {
+    float: right;
+    font-family: "Lucida Grande";
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #355088;
+}
+
+.active {
+    background-color: #3b5998;
+}
+
+#font {
+	padding: 0px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 1.0em;
+}
+
+#iconShortcut {
+	padding: 0px;
+    color: #3b5998;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 1.0em;
+}
+
+#fontOfficial {
+	float: left;
+	padding-top: 10px;
+	padding-left: 100px;
+	padding-right: 0px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 1.8em;
+}
+
+#fontSearchBar {
+	float: left;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 0px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 1.5em;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 275px;
+  padding-left: 0px;
+  /*position: relative;*/
+}
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 3px ;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  color: #111;
+}
+
+.searchTerm:focus{
+  color: #111;
+}
+
+.searchButton {
+  position: absolute;  
+  right: 845px;
+  width: 40px;
+  height: 30px;
+  border: 1px solid ;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#background {
+	background-color: #dfe3ee;
+}
+
+#ads {
+	width: 23%;
+	height: 250px;
+	float: right;
+	/*background-color: white;*/
+	border-radius: 5px;
+}
+
+#shortcuts {
+	width: 25%;
+	height: 700px;
+	float: left;
+}
+
+#copyrights {
+	width: 100%;
+	height: 100px;
+	float: left;
+	position: center;
+	text-align: center;
+}
+
+#postSection {
+	width: 50%;
+	height: 150px;
+	float: left;
+	background-color: white;
+	border-radius: 5px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+#adsStyle {
+	background-color: white; 
+	border-radius: 5px;
+	height: 250px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+#shortcutStyle{
+	font-size: 1.0em;
+	padding-bottom: 5px;
+	padding-right: 10px;
+	list-style-type: none;
+	font-family: "Lucida Grande";
+}
+
+
+#liShortcut a {
+    display: block;
+    color: black;
+    text-align: left;
+    padding: 8px 10px;
+    text-decoration: none;
+}
+
+#liShortcut a:hover:not(.active) {
+    background-color: #f7f7f7;
+}
+</style>
+<title>
+	FACEBUKING
+</title>
+</head>
+<body id = "background">
+<header>
+	<ul id = "ulMain">
+	  <li id = "liMain"><a href="#menu"><i id = "font" class="fa fa-arrow-circle-o-down"></i></a></li>
+	  <li id = "liMain"><a href="#help"><i id = "font" class="fa fa-question-circle"></i></a></li>
+	  <li id = "liMain"><a href="#notifications"><i id = "font" class="fa fa-globe"></i></a></li>
+	  <li id = "liMain"i><a href="#inbox"><i id = "font" class="fa fa-commenting"></i></a></li>
+	  <li id = "liMain"><a href="#friendrequests"><i id = "font" class="fa fa-group"></i></a></li>
+	  <a href = "#home"><li id = "fontOfficial" class = "fa fa-facebook-square"></li></a>
+	  <li id = "liMain"><a href="#home">Home</a></li>
+	  <li id = "liMain"><a href="#profile">Profile</a></li>
+	  <li id = "fontSearchBar">	
+	   	<div class="search">
+	      <input type="text" class="searchTerm" placeholder="Search">
+	      <button type="submit" class="searchButton">
+	       	<i id = "font" class="fa fa-search"></i>
+	      </button>
+	   </div>
+	  </li>
+	</ul>
+</header>
+<aside id = "shortcuts">
+	<ul id = "shortcutStyle">
+		<li id = "liShortcut"> 
+			<a href="#profile">
+				<i id = "iconShortcut" class="fa fa-id-card-o"></i>
+		 		Profile 
+		 	</a>
+		 </li>
+		<li id = "liShortcut">
+			<a href="#home">
+				<i id = "iconShortcut" class="fa fa-dedent"></i>
+		 		News Feed 
+		 	</a>
+		 </li>
+		<li id = "liShortcut">
+			<a href="#inbox">
+				<i id = "iconShortcut" class="fa fa-commenting"></i>
+		 		Messages 
+		 	</a>
+		 </li>
+
+	</ul>
+	Shortcuts
+</aside>
+<aside id = "ads">
+	<div style="padding-bottom: 10px">
+	<div id = "adsStyle">
+		Suggested Pages
+	</div>
+	</div>
+	<div id = "adsStyle">
+		Friend Requests
+	</div>
+</aside>
+	<div style="padding-bottom: 170px">
+	<section id = "postSection">
+		postSection postSection postSection
+	</section>
+	</div>
+	<div style="padding-bottom: 170px">
+	<section id = "postSection">
+		whhhhhhhhaaaaaaaaaaaaaaaaaaaaaaaaat
+	</section>
+	</div>
+	<div style="padding-bottom: 170px">
+	<section id = "postSection">
+		aint no crying in the club
+	</section>
+	</div>
+	<div style="padding-bottom: 170px">
+	<section id = "postSection">
+		who got the power?
+	</section>
+	</div>
+	<div style="padding-bottom: 170px">
+	<section id = "postSection">
+		who got the power?
+	</section>
+	</div>
+<footer id = "copyrights">
+	© COPYRIGHTS
+</footer>
+
+</body>
+</html>
