@@ -11,8 +11,22 @@
     background-color: #3b5998;
 }
 
+#ulAdPage {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
 #liMain {
     float: right;
+    font-family: "Lucida Grande";
+}
+
+#liAdPage {
+	width: 25%;
+	float: left;
     font-family: "Lucida Grande";
 }
 
@@ -36,6 +50,12 @@ li a:hover:not(.active) {
 	padding: 0px;
     color: #fff;
     text-shadow: 1px 1px 1px #ccc;
+    font-size: 1.0em;
+}
+
+#fontAd {
+	padding: 0px;
+    color: gray;
     font-size: 1.0em;
 }
 
@@ -192,7 +212,7 @@ body{
 #adsStyle {
 	background-color: white; 
 	border-radius: 5px;
-	height: 250px;
+	height: 260px;
 	padding-top: 10px;
 	padding-left: 10px;
 }
@@ -226,6 +246,15 @@ body{
 	color: #696969;
 	font-weight: bold;
 	padding-bottom: 10px;
+}
+
+#dividerRight {
+	float: left;
+	padding-left: 0px;
+	font-family: "Lucida Grande";
+	color: #696969;
+	padding-bottom: 10px;
+	width: 50%
 }
 
 #interactionIcon {
@@ -329,6 +358,10 @@ hr {
 
 	/*padding-right: 40px;*/
 }
+
+#liAdPage a:hover:not(.active){
+	background-color: white;
+
 </style>
 <title>
 	FACEBUKING
@@ -456,11 +489,33 @@ hr {
 <aside id = "ads">
 	<div style="padding-bottom: 10px">
 	<div id = "adsStyle">
-		Suggested Pages
+		<div id = "dividerRight">
+			Suggested Pages
+		</div>
+		<a href = "#MorePages" style="font-size: 1.0em; float: right; padding-right: 10px; text-decoration: none;"> See all </a>
+		<img src = "https://media.allure.com/photos/59279cffd9ea0a38fc94790a/master/pass/edsfaves-052917-lede.jpg" alt = "Picture containing woman posing" style="max-height: 80%; width: 96%; object-fit: contain;"/>
+		<hr style="width: 96%">
+		<ul id = "ulAdPage">
+	  <li id = "liAdPage"><a href="#publish"><i id = "fontAd" class="fa fa-edit"></i></a></li>
+	  <li id = "liAdPage"><a href="#photo"><i id = "fontAd" class="fa fa-camera"></i></a></li>
+	  <li id = "liAdPage"><a href="#live"><i id = "fontAd" class="fa fa-video-camera"></i></a></li>
+	  <li id = "liAdPage"><a href="#promote"><i id = "fontAd" class="fa fa-microphone"></i></a></li>
+	</ul>
 	</div>
 	</div>
 	<div id = "adsStyle">
-		Friend Requests
+		<div id = "dividerRight">
+			Sponsored
+		</div>
+		<a href = "#MorePages" style="font-size: 1.0em; float: right; padding-right: 10px; text-decoration: none;"> Create Ad 
+		</a>
+		<img src = "https://www.myclassboard.com/blog/wp-content/uploads/2017/09/CBSE-schools-to-run-tuck-shops.jpg" style="max-height: 80%; width: 96%; object-fit: contain;"/>
+		<p id = "PostName" style="padding-left: 0; font-size: 1.0em;">Get up to 75% off on books!</p>
+
+		<a href = "link" style="padding-bottom: 0;font-size: 15px; color: #355088;;text-decoration: none;"> booksmnl.com </a>
+		<p style="font-size: 10px; color: gray;">
+		Visit the book manila bookstore and avail up to 75% discount on all items! Now...
+		</p>
 	</div>
 </aside>
 <div>
