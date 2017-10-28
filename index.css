@@ -356,3 +356,22 @@ hr {
 
 #liAdPage a:hover:not(.active){
 	background-color: white;
+}
+
+#liInline {
+	list-style-type: none;
+	display: inline;
+	color: gray;
+}
+
+#liInline a:hover:not(.active){
+	background-color: #dfe3ee;
+	color: gray;
+}
+
+#seeAllFormat {
+	font-size: 1.0em; 
+	float: right; 
+	padding-right: 10px; 
+	text-decoration: none;
+}
